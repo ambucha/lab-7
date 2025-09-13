@@ -24,5 +24,17 @@ int main(){
         "Andrei", "Carol", "Guilherme", "Fernanda", "Catarina"
     };
 
+    string* revArr = reverseArray(arr, SIZE);
+}
+
+string* reverseArray(const string* arr, int x){
+    // Create a new array to be the reverse array
+    string* revArr = new string[x];
+
+    // Create a for loop going backwards on the reverse array and forwards on the original
+    for(int i = 0; i < x; i++){
+        *(revArr + (x + 1 - i)) = *(arr + i);
+    }
+    return revArr;
 }
 
