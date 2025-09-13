@@ -38,3 +38,4 @@ string* reverseArray(const string* arr, int x){
     return revArr;
 }
 
+// no changes
